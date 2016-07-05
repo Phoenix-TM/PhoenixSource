@@ -97,15 +97,15 @@ end
  
 -- !help command
 local function telegram_help()
-  local text = "🃏 PhoenixTG Shop 💸
-〰〰〰〰〰〰〰〰〰
-📌[1]Month Group: 2000T 💴
-📌[3]Month Group: 3000T 💵
-📌[5]Month Group: 5000T 💷
-📌[Unlimited]Group: 8000T 💶
-〰〰〰〰〰〰〰〰〰
-🙄Want A Group?
-📞Contact The #StaffTeam ! ❤️"
+  local text = "🃏 PhoenixTG Shop 💸"
+  text = text..'\n'..'〰〰〰〰〰〰〰〰〰'
+  text = text..'\n'.. '📌[1]Month Group: 2000T 💴'
+  text = text..'\n'..'📌[3]Month Group: 3000T 💵'
+  text = text..'\n'..'📌[5]Month Group: 5000T 💷'
+  text = text..'\n'..'📌[Unlimited]Group: 8000T 💶'
+  text = text..'\n'..'〰〰〰〰〰〰〰〰〰'
+  text = text..'\n'.. '🙄Want A Group?'
+  text = text..'\n'..'📞Contact The #StaffTeam ! ❤️'
 
   return text
 end
@@ -164,5 +164,5 @@ return {
 }
  
 end
-
+-- By @Nim_Bo
 -- @Phoenix_TM
