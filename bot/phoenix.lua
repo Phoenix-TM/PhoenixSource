@@ -232,14 +232,18 @@ function create_config( )
 	"whitelist",
 	"msg_checks",
 	"calc",
-	"sdhelp"
+	"sdhelp",
+	"chat",
+	"info",
+	"insta",
+	"joke"
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[PhoenixTG Bot !
 An advanced administration bot based on PhoenixTG written in Lua
 
-https://github.com/Phoenix-TM/PhoenixSource/tree/supergroups
+https://github.com/Phoenix-TM/PhoenixSource
 
 Channel :
 @Phoenix_TM
