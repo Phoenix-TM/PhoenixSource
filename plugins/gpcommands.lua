@@ -162,6 +162,7 @@ local text = "♨️ Group Commands List : ♨️"
   text = text..'\n\n'..'🔶 Only mods, owner and admin can add bots in group'
   text = text..'\n\n'..'🔷 Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands'
   text = text..'\n\n'..'🔶 Only owner can use res,setowner,promote,demote and log commands'
+  text = text..'\n\n'..'For See Supergroup Commands : /superhelp'
   text = text..'\n\n'..'➖➖➖➖➖➖➖➖➖➖➖'
   text = text..'\n\n'..'🔰 @Phoenix_TM 🔰'
   text = text..'\n\n'..' ⚜ @PhoenixTG ⚜'
@@ -214,11 +215,11 @@ end
 return {
   description = "Help For Command and Tools",
   usage = {
-    "/commands group"
+    "/commands"
   },
   patterns = {
-    "^[!/#][Cc][Oo][Mm][Mm][Aa][Nn][Dd][Ss] [Gg][Rr][Oo][Uu][Pp]$",
-    "^[!/#][Cc][Oo][Mm][Mm][Aa][Nn][Dd][Ss] [Gg][Rr][Oo][Uu][Pp]"
+    "^[!/#][Cc][Oo][Mm][Mm][Aa][Nn][Dd][Ss]$",
+    "^[!/#][Cc][Oo][Mm][Mm][Aa][Nn][Dd][Ss]"
   },
   run = run
 }
