@@ -237,7 +237,7 @@ https://github.com/Phoenix-TM/PhoenixSource
 Channel :
 @Phoenix_TM
 ]],
-    help_text_realm = [[
+    help_text_sudo = [[
 Realm Commands:
 
 !creategroup [name]
@@ -310,7 +310,7 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
+Commands for Phoenix :
 
 !kick [username|id]
 You can also do it by reply
@@ -405,14 +405,13 @@ Will return group logs
 !banlist
 Will return group ban list
 
-» U can use both "/" and "!" 
+♨️ U can use both "/" and "!" 
 
-» Only mods, owner and admin can add bots in group
+♨️ Only mods, owner and admin can add bots in group
 
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+♨️ Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
 
-» Only owner can use res,setowner,promote,demote and log commands
-
+♨️ Only owner can use res,setowner,promote,demote and log commands
 ]]
   }
   serialize_to_file(config, './data/config.lua')
