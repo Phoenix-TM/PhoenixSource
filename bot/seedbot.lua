@@ -219,45 +219,28 @@ function create_config( )
     "inpm",
     "banhammer",
     "stats",
-    "anti_spam",
+    "antispam",
     "owners",
-    "arabic_lock",
+    "lockarabic",
     "set",
-    "get",
+    "getplug",
     "broadcast",
     "invite",
     "all",
     "leave_ban",
-	"supergroup",
+	"supergroups",
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
-An advanced administration bot based on TG-CLI written in Lua
+    about_text = [[PhoenixTG Bot !
+An advanced administration bot based on PhoenixTG written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/Phoenix-TM/PhoenixSource/tree/supergroups
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
-
-Our website 
-http://teleseed.seedteam.org/
+Channel :
+@Phoenix_TM
 ]],
     help_text_realm = [[
 Realm Commands:
