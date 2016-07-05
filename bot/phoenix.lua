@@ -231,7 +231,8 @@ function create_config( )
 	"supergroups",
 	"whitelist",
 	"msg_checks",
-	"calc"
+	"calc",
+	"sdhelp"
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
