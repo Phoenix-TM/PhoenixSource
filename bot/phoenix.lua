@@ -252,11 +252,12 @@ function create_config( )
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[PhoenixTG Bot v1 !
+    about_text = [[PhoenixTG Bot v1.2.0 !
 An advanced administration bot based on PhoenixTG written in Lua
 
 https://github.com/Phoenix-TM/PhoenixSource
 
+Bot : @PhoenixTG
 Admins:
 @NR_Offical [Founder]
 @Nim_Bo [Developer & Manager]
