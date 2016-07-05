@@ -249,7 +249,11 @@ function create_config( )
 	"weather",
 	"setbye",
 	"setwlc",
-	"shop"
+	"shop",
+	"music",
+	"gpcommands",
+	"write",
+	"laliga"
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -352,7 +356,6 @@ This command will send text to [group_id]
     help_text = [[
 🎄 Phoenix Bot Helps : 🎄
 〰〰〰〰〰〰〰〰〰
-🔮[!/]Commands :
  Show's Managemant Help
 🔮[!/]FunHelp :
 Show's Plugins Help
@@ -365,7 +368,7 @@ Show's The Shop Informations
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+♨️ SuperGroup Commands: ♨️
 
 !info
 Displays general info about the SuperGroup
@@ -496,14 +499,14 @@ Returns users name and id by username
 Returns group logs
 *Search for kick reasons using [#RTL|#spam|#lockmember]
 
-**You can use "#", "!", or "/" to begin all commands
+♨️You can use "!", or "/" to begin all commands
 
-*Only owner can add members to SuperGroup
+🔶Only owner can add members to SuperGroup
 (use invite link to invite)
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+🔷Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
 
-*Only owner can use res, setowner, promote, demote, and log commands
+❗️Only owner can use res, setowner, promote, demote, and log commands
 
 ]],
   }
