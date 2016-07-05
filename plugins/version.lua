@@ -1,14 +1,15 @@
 do
 
 function run(msg, matches)
-  return 'PhoenixTG Bot v1'.. [[ 
+  return 'PhoenixTG Bot v1.2.0'.. [[ 
   
-  Anti Spam Bot : @PhoenixTG
-  Channel : @Phoenix_TM
-  
-  Admins :
-  @NR_Offical [Founder]
-  @Nim_Bo [Manager & Developer] 
+ 🔰PhoenixTG : 💿 
+  ﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
+🃏 Version : 1.2.0 🃏
+🎭 By #PhoenixTeam 🎭
+🗣Channel: @Phoenix_TM
+﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
+👾 @PhoenixTG 👾
   ]]
 end
 
