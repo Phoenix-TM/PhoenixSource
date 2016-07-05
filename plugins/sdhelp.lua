@@ -145,11 +145,10 @@ local function run(msg, matches)
 end
  
 return {
-  description = "Help For Command and Tools",
+  description = "Help For Sudo",
   usage = {
-    "/help : view items list",
-    "/helps : view all commands and info",
-    "/help (name) : view a item commands and info",
+    "/sdhelp",
+    "/sudohelp"
   },
   patterns = {
     "^[!/$#][Ss][Dd][Hh][Ee][Ll][Pp]$",
@@ -159,5 +158,3 @@ return {
 }
  
 end
--- By @Nim_Bo
--- @Phoenix_TM
