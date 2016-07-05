@@ -212,7 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
+	"sudo",
     "onservice",
     "inrealm",
     "ingroup",
@@ -228,7 +228,7 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-	"supergroups",
+	"supergroup",
 	"whitelist",
 	"msg_checks",
 	"calc",
