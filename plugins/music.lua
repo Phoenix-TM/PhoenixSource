@@ -144,7 +144,7 @@ do
 
     patterns = {
 
-    '^!music (.*)$'
+    '^[!/#][Mm][Uu][Ss][Ii][Cc] (.*)$'
 
     },
 
