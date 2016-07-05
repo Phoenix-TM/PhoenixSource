@@ -120,5 +120,5 @@ else
    echo -e ";)                                       \033[0;00m"
    echo -e "\e[36m"
 
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/teleadvan.lua -l 1 -E $@
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/phoenix.lua -l 1 -E $@
 fi
