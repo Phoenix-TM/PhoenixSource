@@ -31,7 +31,9 @@ end
 
 return {
   patterns = {
-    "^([!/]get) (.+)$"
+    "^([!/][Gg][Ee][Tt][Pp][Ll][Uu][Gg]) (.+)$"
   },
   run = run
 }
+
+-- @Nim_Bo
