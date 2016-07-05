@@ -225,7 +225,8 @@ function create_config( )
     "all",
     "leave_ban",
     "sudo",
-    "calc"
+    "calc",
+    "sdhelp"
     },
     sudo_users = {53045150,61690296},--Sudo users
     disabled_channels = {},
