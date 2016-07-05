@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '2'
+VERSION = '1'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -216,40 +216,26 @@ function create_config( )
     "stats",
     "anti_spam",
     "owners",
-    "arabic_lock",
+    "lockarabic",
     "set",
-    "get",
+    "getplug",
     "broadcast",
     "download_media",
     "invite",
     "all",
     "leave_ban",
-    "admin"
+    "sudo"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {53045150,61690296},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[PhoenixTG Bot !
+An advanced administration bot based on PhoenixTG written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/Phoenix-TM/PhoenixSource
 
-Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
-
-Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
-
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+Channel :
+@Phoenix_TM
 ]],
     help_text_realm = [[
 Realm Commands:
