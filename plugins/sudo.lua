@@ -188,22 +188,21 @@ local function run(msg,matches)
 end
 return {
   patterns = {
-	"^[!/](pm) (%d+) (.*)$",
-	"^[!/](import) (.*)$",
-	"^[!/](unblock) (%d+)$",
-	"^[!/](block) (%d+)$",
-	"^[!/](markread) (on)$",
-	"^[!/](markread) (off)$",
-	"^[!/](setbotphoto)$",
+	"^[!/]([Pp][Mm]) (%d+) (.*)$",
+	"^[!/]([Ii][Mm][Pp][Oo][Rr][Tt]) (.*)$",
+	"^[!/]([Uu][Nn][Bb][Ll][Oo][Cc][Kk]) (%d+)$",
+	"^[!/]([Bb][Ll][Oo][Cc][Kk]) (%d+)$",
+	"^[!/]([Mm][Aa][Rr][Kk][Rr][Ee][Aa][Dd]) ([Oo][Nn])$",
+	"^[!/](Mm][Aa][Rr][Kk][Rr][Ee][Aa][Dd]) ([Oo][Ff][Ff])$",
+	"^[!/]([Ss][Ee][Tt][Bb][Oo][Tt][Pp][Hh][Oo][Tt][Oo])$",
 	"%[(photo)%]",
-	"^[!/](contactlist)$",
-	"^[!/](dialoglist)$",
-	"^[!/](delcontact) (%d+)$",
-        "^[!/](addcontact) (.*) (.*) (.*)$",
-	"^[!/](whois) (%d+)$",
+	"^[!/]([Cc][Oo][Nn][Tt][Aa][Cc][Tt])$",
+	"^[!/]([Dd][Ii][Aa][Ll][Oo][Gg][Ll][Ii][Ss][Tt])$",
+	"^[!/]([Dd][Ee][Ll][Cc][Oo][Nn][Tt][Aa][Cc][Tt]) (%d+)$",
+        "^[!/]([Aa][Dd][Dd][Cc][Oo][Nn][Tt][Aa][Cc][Tt]) (.*) (.*) (.*)$",
+	"^[!/]([Ww][Hh][Oo][Ii][Ss]) (%d+)$",
 	"^/(sync_gbans)$"--sync your global bans with seed
   },
   run = run,
 }
---By @imandaneshi :)
---https://github.com/SEEDTEAM/TeleSeed/blob/master/plugins/admin.lua
+-- @Nim_Bo
