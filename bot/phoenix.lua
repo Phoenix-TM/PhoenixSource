@@ -248,7 +248,8 @@ function create_config( )
 	"warn",
 	"weather",
 	"setbye",
-	"setwlc"
+	"setwlc",
+	"shop"
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
