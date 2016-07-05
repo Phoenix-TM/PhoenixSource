@@ -112,13 +112,6 @@ else
     exit 1
   fi
   
-     echo -e "\033[38;5;208m"
-   echo -e "You Are Used Phoenix Source :) ! "
-   echo -e "Thanks For Select This Source ;) "
-   echo -e "You Can Visit Phoenix Channel : @Phoenix_TM "
-   echo -e "Bot : @PhoenixTG
-   echo -e ";)                                       \033[0;00m"
-   echo -e "\e[36m"
 
   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/phoenix.lua -l 1 -E $@
 fi
