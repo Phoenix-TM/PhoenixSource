@@ -3,11 +3,11 @@ local function mathjs(exp)
   url = url..'?expr='..URL.escape(exp)
   local b,c = http.request(url)
   local text = nil
-  if c == 9999 then
+  if c == 99999999999999 then
     text = '@Phoenix_TM\n\nAnswer : '..b
     
   
-  elseif c == 9999 then
+  elseif c == 99999999999999 then
     text = b
   else
     text = '@Phoenix_TM\n\nAnswer : '..b
@@ -23,5 +23,5 @@ local function mathjs(exp)
   },
   run = run
 }
--- By @Nim_Bo
+
 -- @Phoenix_TM
