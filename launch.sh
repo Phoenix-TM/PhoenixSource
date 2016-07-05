@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 THIS_DIR=$(cd $(dirname $0); pwd)
@@ -58,21 +59,6 @@ install_rocks() {
     then echo "Error. Exiting."; exit $RET;
   fi
 
-  ./.luarocks/bin/luarocks install luafilesystem
-  RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
-  fi
-
-  ./.luarocks/bin/luarocks install lub
-  RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
-  fi
-
-  ./.luarocks/bin/luarocks install luaexpat
-  RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
-  fi
-
   ./.luarocks/bin/luarocks install xml
   RET=$?; if [ $RET -ne 0 ];
     then echo "Error. Exiting."; exit $RET;
@@ -125,6 +111,14 @@ else
     echo "Run $0 install"
     exit 1
   fi
+  
+     echo -e "\033[38;5;208m"
+   echo -e "You Are Used Phoenix Source :) ! "
+   echo -e "Thanks For Select This Source ;) "
+   echo -e "You Can Visit Phoenix Channel : @Phoenix_TM "
+   echo -e "Bot : @PhoenixTG
+   echo -e ";)                                       \033[0;00m"
+   echo -e "\e[36m"
 
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/seedbot.lua -l 1 -E $@
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/teleadvan.lua -l 1 -E $@
 fi
