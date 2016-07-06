@@ -253,7 +253,10 @@ function create_config( )
 	"music",
 	"gpcommands",
 	"write",
-	"laliga"
+	"laliga",
+	"lock_fosh",
+	"lock_ads",
+	"lock_emoji"
     },
     sudo_users = {53045150,61690296},--Sudo users
     moderation = {data = 'data/moderation.json'},
