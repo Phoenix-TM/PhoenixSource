@@ -359,6 +359,7 @@ This command will send text to [group_id]
     help_text = [[
 🎄 Phoenix Bot Helps : 🎄
 〰〰〰〰〰〰〰〰〰
+🔮[!/]Commands
  Show's Managemant Help
 🔮[!/]FunHelp :
 Show's Plugins Help
