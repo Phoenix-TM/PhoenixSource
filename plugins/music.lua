@@ -1,18 +1,9 @@
---[[
-#
-#   Music Downloader
-#
-#    @Dragon_Born
-#	@GPMod
-#
-#
-]]
 local function musiclink(msg, musicid)
 	local value = redis:hget('music:'..msg.to.id, musicid)
 	if not value then
 		return
 	else
-		value = value..'\n\n@DragonTele_Ch'
+		value = value..'\n\n@Phoenix_TM'
 		return value
 	end
 end
@@ -87,3 +78,4 @@ patterns = {
 	run = run 
 }
 
+-- @Phoenix_TM
