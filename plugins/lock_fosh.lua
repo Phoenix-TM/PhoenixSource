@@ -34,6 +34,8 @@ return {
 	"گوساله",
 	"[Gg][Oo][Ss][Aa][Ll][Ee]",
 	"[Gg][Uu][Ss][Aa][Ll][Ee]",
+	"[Ff][Uu][Cc][Kk]",
+	"فاک"
   },
   run = run
 }
