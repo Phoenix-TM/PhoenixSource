@@ -330,7 +330,7 @@ local function lock_group_emoji(msg, data, target)
   if not is_momod(msg) then
     return
   end
-  local group_link_lock = data[tostring(target)]['settings']['lock_emoji']
+  local group_emoji_lock = data[tostring(target)]['settings']['lock_emoji']
   if group_link_lock == 'yes' then
     return 'Emoji posting is already locked'
   else
@@ -351,6 +351,62 @@ local function unlock_group_emoji(msg, data, target)
     data[tostring(target)]['settings']['lock_emoji'] = 'no'
     save_data(_config.moderation.data, data)
     return 'Emoji posting has been unlocked'
+  end
+end
+
+local function lock_group_fosh(msg, data, target)
+  if not is_momod(msg) then
+    return
+  end
+  local group_link_lock = data[tostring(target)]['settings']['lock_fosh']
+  if group_link_lock == 'yes' then
+    return 'Insult posting is already locked'
+  else
+    data[tostring(target)]['settings']['lock_fosh'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'Insult posting has been locked'
+  end
+end
+
+local function unlock_group_fosh(msg, data, target)
+  if not is_momod(msg) then
+    return
+  end
+  local group_link_lock = data[tostring(target)]['settings']['lock_fosh']
+  if group_link_lock == 'no' then
+    return 'Insult posting is not locked'
+  else
+    data[tostring(target)]['settings']['lock_fosh'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'Insult posting has been unlocked'
+  end
+end
+
+local function lock_group_ads(msg, data, target)
+  if not is_momod(msg) then
+    return
+  end
+  local group_ads_lock = data[tostring(target)]['settings']['lock_ads']
+  if group_link_lock == 'yes' then
+    return 'Ads posting is already locked'
+  else
+    data[tostring(target)]['settings']['lock_ads'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'Ads posting has been locked'
+  end
+end
+
+local function unlock_group_ads(msg, data, target)
+  if not is_momod(msg) then
+    return
+  end
+  local group_link_ads = data[tostring(target)]['settings']['lock_ads']
+  if group_link_lock == 'no' then
+    return 'Ads posting is not locked'
+  else
+    data[tostring(target)]['settings']['lock_ads'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'Ads posting has been unlocked'
   end
 end
 
@@ -593,7 +649,7 @@ end
 		end
 	end
   local settings = data[tostring(target)]['settings']
-  local text = "SuperGroup settings:\nLock links : "..settings.lock_link.."\nLock emoji : "..settings.lock_emoji.."\nLock flood: "..settings.flood.."\nFlood sensitivity : "..NUM_MSG_MAX.."\nLock spam: "..settings.lock_spam.."\nLock Arabic: "..settings.lock_arabic.."\nLock Member: "..settings.lock_member.."\nLock RTL: "..settings.lock_rtl.."\nLock Tgservice : "..settings.lock_tgservice.."\nLock sticker: "..settings.lock_sticker.."\nPublic: "..settings.public.."\nStrict settings: "..settings.strict
+  local text = "SuperGroup settings:\nLock links : "..settings.lock_link.."\nLock emoji : "..settings.lock_emoji.."\nLock insult : "..settings.lock_fosh.."\nLock flood: "..settings.flood.."\nFlood sensitivity : "..NUM_MSG_MAX.."\nLock spam: "..settings.lock_spam.."\nLock Arabic: "..settings.lock_arabic.."\nLock Member: "..settings.lock_member.."\nLock RTL: "..settings.lock_rtl.."\nLock Tgservice : "..settings.lock_tgservice.."\nLock sticker: "..settings.lock_sticker.."\nPublic: "..settings.public.."\nStrict settings: "..settings.strict
   return text
 end
 
@@ -1697,6 +1753,18 @@ local function run(msg, matches)
 			if matches[2] == 'member' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked member ")
 				return lock_group_membermod(msg, data, target)
+			end
+			if matches[2] == 'emoji' then
+				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked emoji ")
+				return lock_group_emoji(msg, data, target)
+			end
+			if matches[2] == 'fosh' then
+				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked fosh ")
+				return lock_group_fosh(msg, data, target)
+			end
+			if matches[2] == 'ads' then
+				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked ads ")
+				return lock_group_ads(msg, data, target)
 			end
 			if matches[2]:lower() == 'rtl' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked rtl chars. in names")
