@@ -37,8 +37,11 @@ local text = jdat.Builder..' \n🇪🇸🇪🇸🇪🇸🇪🇸🇪🇸🇪🇸�
   return text
 end
 return {
-  patterns = {"^[!/#][Ll][Aa][Ll][Ii][Gg][Aa]$", 
+  patterns = {
+ "^[!/#][Ll][Aa][Ll][Ii][Gg][Aa]$",
  "^[!/#][Ss][Pp][Aa][Ii][Nn][Ll][Ii][Gg]$",
-run = run 
+},
+run = run
 }
+
 -- @Phoenix_TM
