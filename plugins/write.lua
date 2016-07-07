@@ -1,6 +1,6 @@
 local function run(msg, matches)
 	if #matches < 2 then
-		return "زیبا نویسی متن توسط @thisisCrazy کپی بدون ذکر منبع حرام میباشد:|"
+		return "@Phoenix_TM"
 	end
 	if string.len(matches[2]) > 20 then
 		return "فقط  ۲۰ حرف مجاز است! @"..msg.from.username
@@ -186,12 +186,12 @@ local function run(msg, matches)
 		a=a+1
 		result_text = result_text..a.."- "..result[a].."\n\n"
 	end
-	return result_text.."Creator: @ThisisCrazy !"
+	return result_text.."@Phoenix_TM !"
 end
 
 return {
 	description = "Fantasy Writer",
-	usagehtm = '<tr><td align="center">write </td><td align="right">By @thisiscrazy !</td></tr>',
+	usagehtm = '<tr><td align="center">write </td><td align="right">By @Phoenix_TM !</td></tr>',
 	usage = {"write [text] : زیبا نویسی",},
 	patterns = {
 		"^([!/#][Ww][Rr][Ii][Tt][Ee]) (.*)",
