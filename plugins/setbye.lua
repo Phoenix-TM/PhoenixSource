@@ -41,8 +41,7 @@ end
    end
 
 return {
- },
- patterns = {
+  patterns = {
   "^[!#/]([Ss]etbye) (.*)$",
   "^[!#/]([Dd]elbye)$",
   "^!!tgservice (chat_del_user)$",
